@@ -1,16 +1,29 @@
-# React + Vite
+# Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple expense tracker web app for recording daily spending, tracking categories, and viewing summaries.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Add income and expense entries
+- Categorize transactions (e.g. food, transport, bills)
+- View transaction history
+- See total balance and spending summary
+- Simple user interface for quick tracking
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Start the app with `npm start`.
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Open the app in your browser.
+2. Add a new transaction with amount, category, and description.
+3. Review the list of transactions.
+4. Monitor your current balance and spending totals.
+
+## Notes
+
+- Make sure your browser allows local storage if the app uses it.
+- This project can be extended with authentication, charts, and export options.
