@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-purple: rgba(170, 59, 255, 1);
+  --color-neon-purple-glow: rgba(170, 59, 255, 0.4);
+  --color-neon-green: rgba(16, 185, 129, 1);
+  --color-neon-green-glow: rgba(16, 185, 129, 0.4);
+  --color-deep-charcoal: #0B0E14;
+  --color-card-dark: #151A22;
+  --color-card-glass: rgba(21, 26, 34, 0.6);
+  --color-border-dark: #2A303C;
+  --color-neon-red: #f43f5e;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0B0E14] text-white font-sans antialiased overflow-x-hidden;
+  }
+}
