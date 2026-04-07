@@ -21,10 +21,13 @@ export default function Login({ onLogin }) {
 
   return (
     <div className="min-h-screen bg-[#0B0E14] flex items-center justify-center p-4 selection:bg-[#aa3bff] selection:text-white">
-      {/* Background Decorative Blur */}
+  
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl aspect-square pointer-events-none">
+  
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#aa3bff] rounded-full blur-[150px] opacity-20 animate-pulse" />
+  
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#10b981] rounded-full blur-[150px] opacity-10" />
+  
       </div>
 
       <motion.div 
@@ -33,7 +36,9 @@ export default function Login({ onLogin }) {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="w-full max-w-md relative z-10"
       >
+  
         <div className="text-center mb-8">
+  
           <motion.div 
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
@@ -42,17 +47,22 @@ export default function Login({ onLogin }) {
           >
             <Activity className="w-8 h-8 text-[#aa3bff]" />
           </motion.div>
+          
           <h1 className="text-4xl font-bold tracking-tight text-white mb-2">
             Welcome to <br/>
             Nexus<span className="text-[#aa3bff]">Tracker</span>
           </h1>
+          
           <p className="text-[#8b95a5] font-medium text-sm">
             Sign in to manage your finances.
           </p>
+        
         </div>
 
         <div className="bg-[#151A22]/80 backdrop-blur-xl border border-[#2A303C] rounded-3xl p-8 shadow-2xl">
+        
           <form onSubmit={handleSubmit} className="space-y-5">
+        
             <div className="space-y-2">
               <label className="text-xs font-semibold text-[#8b95a5] uppercase tracking-wider ml-1">Email</label>
               <div className="relative">
@@ -67,6 +77,7 @@ export default function Login({ onLogin }) {
                   placeholder="you@example.com"
                   className="w-full bg-[#1A1F29] border border-[#2A303C] rounded-xl pl-12 pr-4 py-3.5 focus:outline-none focus:border-[#aa3bff] focus:ring-1 focus:ring-[#aa3bff] transition-all placeholder:text-[#2A303C] text-white"
                 />
+        
               </div>
             </div>
 

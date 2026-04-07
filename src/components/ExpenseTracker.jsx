@@ -112,7 +112,7 @@ export default function ExpenseTracker({ onLogout }) {
     <div className="min-h-screen bg-[#0B0E14] text-white p-4 md:p-8 font-sans selection:bg-[#aa3bff] selection:text-white flex justify-center">
       <div className="w-full max-w-5xl mx-auto space-y-8">
         
-        {/* Header Section */}
+        {/* header section */}
         <header className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold tracking-tight text-white/90">
             Nexus<span className="text-[#aa3bff]">Tracker</span>
@@ -139,18 +139,18 @@ export default function ExpenseTracker({ onLogout }) {
           </div>
         </header>
 
-        {/* Top Grid: Hero Balance & Chart */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          
-          {/* Hero Balance Card */}
+        
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             className="lg:col-span-1 relative rounded-3xl p-8 overflow-hidden backdrop-blur-xl bg-gradient-to-br from-[#1A1F29]/80 to-[#10141D]/90 border border-[#2A303C] shadow-2xl"
           >
-            {/* Glow Background */}
+
             <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#aa3bff] rounded-full blur-[100px] opacity-20 pointer-events-none animate-pulse"></div>
+
             <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-[#10b981] rounded-full blur-[100px] opacity-10 pointer-events-none"></div>
 
             <div className="relative z-10 flex flex-col h-full justify-between">
@@ -186,7 +186,6 @@ export default function ExpenseTracker({ onLogout }) {
             </div>
           </motion.div>
 
-          {/* Chart Section */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -254,7 +253,6 @@ export default function ExpenseTracker({ onLogout }) {
           </motion.div>
         </div>
 
-        {/* Transactions List */}
         <div className="mt-8">
           <h2 className="text-xl font-semibold mb-6 tracking-wide text-white/90">Recent Transactions</h2>
           
@@ -332,11 +330,10 @@ export default function ExpenseTracker({ onLogout }) {
         </div>
       </div>
 
-      {/* Slide-over Add Transaction Modal */}
       <AnimatePresence>
         {isModalOpen && (
           <>
-            {/* Backdrop */}
+  
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
